@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>疫情无情人有情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="renderer" content="webkit">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  <style>
+    body {
+      color: #333;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+      background-image: url(images/help-bg-main.png?01);
+      background-size: 100%;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    .doc {
+      line-height: 24px;
+      text-indent: 24px;
+      text-align: justify;
+    }
+
+    .help-bg-top {
+      background: url(images/help-bg-top.png?01)  center 30px no-repeat no-repeat #fff;
+      background-size: 100%;
+      width: 100%;
+      height: 100px;
+      padding-top: 30px;
+    }
+
+    .help-bg-bottom {
+      background: url(images/help-bg-bottom.png?01) no-repeat no-repeat bottom;
+      background-size: 100%;
+      width: 100%;
+      height: 150px;
+      position: relative;
+    }
+
+    .help-main {
+      padding: 0 40px 30px;
+    }
+
+    p:first-child {
+      margin-top: 0px;
+    }
+
+    p:last-child {
+      margin-bottom: 0px;
+    }
+
+    .help-main h2:first-child {
+      margin-top: 0px;
+    }
+
+    .signature {
+      text-align: right;
+      color: #999;
+      margin-right: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="help-bg-top" id="help-bg-top"></div>
+  <div class="help-main">
+    <h2>各位朋友，大家好：</h2>
+    <p class="doc">
+      战战兢兢中又过了一天，截止昨天还想着有没有可能误诊然后自己好起来或者自己只是做了一个长长的梦。昨天一个对普通人来讲啥事没有的感染让她浑身打颤，脸色苍白，紧接着发烧，彻底打破我这种一厢情愿的幻想。好在主任经验丰富，下药果断，护士小姐姐百米冲刺般的过来输氧，用药，及时的把我们从悬崖边上拉了回来。稳定下来后收起幻想，于是先发出求献血信息，到后来的募捐。
+    </p>
+    <p class="doc">
+      今天跟无数的人说了无数次谢谢:谢你们的嘘寒问暖，加油打劲；也谢你们慷慨解囊，爱心捐赠；更加谢你们无惧疫情，不辞辛苦的赶来献血。你们其中有我的亲人，朋友，同学，同事，更多的是素未谋面或仅有一面之缘的陌生人。敲敲打打想跟你们说点什么，却找不到一个满意的词藻。也许我们永远不可能再见面，也许我不会有哪怕一次帮你的机会，但只要有人有需求，我将竭尽所能，就像你们今天帮我一样。
+    </p>
+    <p class="doc">
+      末尾重点感谢那些在背后默默的为我们组织更多的朋友群策群力的人(公司的领导、综合部的同事，本人以及老婆的同学某某，某某某）；感谢今天的两位献血者，他们无惧疫情，接到消息就放下手中的工作赶来捐献，献完后挥挥衣袖，只留给我一个潇洒的背影。
+    </p>
+    <p class="doc">开发募捐页面本意只想本人朋友圈内小范围求助，大范围的转发还是水滴等众筹平台更适合，因此我们停用这种方式募捐，等她进仓后本人可以腾出时间跑手续再根据需要来启动第三方平台募捐。再次感谢大家，谢谢，我将永远铭记你们的无私相助。
+    </p>
+  </div>
+  <div class="help-bg-bottom" id="help-bg-bottom">
+    <p class="doc signature">
+      许木贵
+      <br />
+      2020年3月3日</p>
+  </div>
+</body>
+<script>
+  function setBgHeight() {
+    const multi = document.body.offsetWidth / 600
+    const topDom = document.getElementById('help-bg-top')
+    const topBottom = document.getElementById('help-bg-bottom')
+    topDom.style.height = 168 * multi + "px"
+    topBottom.style.height = 224 * multi + "px"
+  }
+  setBgHeight()
+</script>
+
+</html>
